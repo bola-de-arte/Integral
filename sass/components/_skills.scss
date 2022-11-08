@@ -1,0 +1,39 @@
+.skills {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
+  h7 {
+    font-size: 35px;
+    color: var(--alpha);
+    text-align: center;
+    border-bottom: solid var(--beta) 2px;
+    padding-bottom: 10px;
+  }
+  &__body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--gamma);
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  &__box {
+    margin: 30px 40px 20px 40px;
+    width: 600px;
+  }
+
+  &__typeimg {
+    list-style: none;
+  }
+  @include respond-to("small") {
+    &__wrapper {
+      display: flex;
+    }
+  }
+}

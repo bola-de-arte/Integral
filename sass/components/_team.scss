@@ -1,0 +1,44 @@
+.team {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
+  h8 {
+    font-size: 35px;
+    color: var(--alpha);
+    text-align: center;
+    border-bottom: solid var(--beta) 2px;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: 14px;
+    color: var(--gamma);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__container {
+    margin: 30px 40px 20px 40px;
+    border: 2px red dotted;
+  }
+
+  &__profile {
+    border: 2px blue dotted;
+    display: grid;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__profileimg {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+  }
+  @include respond-to("small") {
+    &__container {
+      display: flex;
+    }
+  }
+}

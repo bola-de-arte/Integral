@@ -1,0 +1,104 @@
+.services {
+  background-color: #1c1c1c;
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+  }
+
+  &__icon {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &__line {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  &__body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 45px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: var(--light);
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 16px;
+    color: #505150;
+    text-align: center;
+  }
+
+  h3 {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #818284;
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #818284;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  &__type {
+    // border: blue dotted 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__typeimg {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 8rem;
+  }
+
+  h4 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--light);
+    margin-top: 10rem;
+  }
+
+  h6 {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #818284;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  @include respond-to("small") {
+    .container {
+      // border: red dotted 2px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 20rem;
+    }
+  }
+}

@@ -1,6 +1,10 @@
 .hero {
   padding: 10rem;
   background-color: var(--light);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &--bgimg {
     background-image: url(../../images/hero-small.svg);
@@ -15,17 +19,16 @@
     color: var(--light);
     line-height: 30rem;
     margin-bottom: 15rem;
-    margin-top: 200rem;
     display: flex;
     justify-content: center;
+    border-radius: 50rem var(--alpha);
   }
 
   h2 {
-    font-size: 40rem;
+    font-size: 35rem;
     color: var(--light);
-    line-height: 30rem;
+    line-height: 50rem;
     margin-bottom: 15rem;
-    margin-top: 30rem;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -33,20 +36,80 @@
 
   p {
     color: var(--light);
-    font-size: 20rem;
+    font-size: 16rem;
     display: flex;
     margin-top: 40rem;
     justify-content: center;
     align-content: center;
   }
 
+  &__btn-wrap {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 240px;
+    max-height: 200px;
+  }
+
+  &__download-btn {
+    background-color: var(--beta);
+    border: none;
+    border-radius: 5rem;
+    color: var(--light);
+    font-weight: bold;
+    padding: 8rem;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  &__feature-btn {
+    background-color: transparent;
+    border: 1px var(--light) solid;
+    border-radius: 5rem;
+    color: var(--light);
+    font-weight: bold;
+    padding: 8rem;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  &__wrap {
+    max-width: 700px;
+    text-align: center;
+  }
+
   @include respond-to("small") {
-    &__wrap {
-      font-size: 100rem;
+    h1 {
+      font-size: 100px;
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 60px;
     }
 
     &--bgimg {
       background-image: url(../../images/hero-big.svg);
+    }
+
+    &__btn-wrap {
+      max-width: 450px;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+
+    &__download-btn {
+      margin-top: 0;
+    }
+
+    &__feature-btn {
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 20rem;
     }
   }
 }
